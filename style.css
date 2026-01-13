@@ -33,18 +33,19 @@ nav {
 
 
 .navItems li {
-    text-decoration: none;
-    display: inline;
-    margin: 0px 10px;
+    display: inline-block; /* Changed to inline-block so margins/transitions work better */
     text-decoration: underline;
     color: white;
+    margin: 0px 10px;
+    font-size: 20px;
+    transition: all 1s ease; 
 }
 
 .navItems li:hover {
     cursor: pointer;
     font-size: 25px;
     text-decoration: none;
-    margine: 0;
+    margin: 0px; 
 }
 
 .banner {
@@ -159,3 +160,4 @@ h3 {
 footer {
     margin-left: 10px;
 }
+
